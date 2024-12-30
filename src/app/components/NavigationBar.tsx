@@ -47,9 +47,8 @@ export const NavigationBar = () => {
 				: 'bg-transparent border-zinc-200/0 dark:border-zinc-800/0'
 				}`}
 		>
-			<div className="max-w-6xl mx-auto px-6">
+			<div className="max-w-6xl mx-auto px-3">
 				<div className="flex justify-between items-center h-16">
-					{/* Logo */}
 					<a
 						href="#"
 						className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text"

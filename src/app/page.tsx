@@ -2,7 +2,7 @@ import ProjectsSection from './components/ProjectsSection';
 import { Github, Mail, MapPin, Send } from 'lucide-react';
 import { NavigationBar } from './components/NavigationBar';
 import LinkedIn from './components/icons/LinkedIn';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Skills from './components/Skills';
 
 
@@ -12,11 +12,10 @@ export default function Home() {
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100">
       <NavigationBar />
 
-      <div className="relative pt-20">
-        <div className="absolute inset-0 max-w-6xl mx-auto">
+      <div className="relative pt-20 overflow-hidden">
+        <div className="absolute inset-x-0 -inset-y-40 max-w-6xl mx-auto">
           {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-purple-500/30 transform rotate-12 blur-3xl opacity-20 animate-pulse duration-1000"></div> */}
           <div className="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-purple-500/30 transform rotate-12 blur-3xl opacity-20 [animation:pulse_8s_cubic-bezier(0.4,0,0.6,1)_infinite]"></div>
-
         </div>
 
         <div className="max-w-6xl mx-auto px-6 pt-12">
@@ -27,17 +26,17 @@ export default function Home() {
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <div className="relative group">
                   <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
-                  <Image
+                  {/* <Image
                     src="/pfp.png"
                     alt="Profile"
                     width={128}
                     height={128}
                     className="relative rounded-full object-cover border-2 border-white/50 dark:border-white/20"
                     priority
-                  />
+                  /> */}
                 </div>
                 <div>
-                  <h1 className="text-6xl py-3 font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
+                  <h1 className="text-4xl lg:text-6xl py-3 font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
                     Akshay
                   </h1>
                   <p className="text-2xl text-zinc-700 dark:text-zinc-300 mb-3">Full Stack Developer</p>
