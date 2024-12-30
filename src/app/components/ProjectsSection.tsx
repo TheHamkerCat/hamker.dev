@@ -24,11 +24,11 @@ interface Project {
 
 const FEATURED_REPOS: string[] = [
   'WilliamButcherBot',
+  'llm-receipt-scanner',
   'Telegram_VC_Bot',
   'NSFW_Detection_API',
-  'telegram-antispam-rs',
   'wallrus',
-  'llm-receipt-scanner'
+  'telegram-antispam-rs',
 ] as const;
 
 async function getGithubProjects(): Promise<{ projects: Project[], error?: string }> {
@@ -43,8 +43,12 @@ async function getGithubProjects(): Promise<{ projects: Project[], error?: strin
 
     const projects = repos
       .filter((repo): repo is GitHubRepo => FEATURED_REPOS.includes(repo.name))
+      .sort((a, b) =>
+        FEATURED_REPOS.indexOf(a.name) -
+        FEATURED_REPOS.indexOf(b.name)
+      )
       .map(repo => ({
-        title: repo.name,
+        title: repo.name.replaceAll("_", "-").toLowerCase(),
         description: repo.description || '',
         tech: getTechStack(repo),
         stats: {
@@ -53,10 +57,7 @@ async function getGithubProjects(): Promise<{ projects: Project[], error?: strin
         },
         link: repo.html_url
       }))
-      .sort((a, b) =>
-        FEATURED_REPOS.indexOf(a.title as typeof FEATURED_REPOS[number]) -
-        FEATURED_REPOS.indexOf(b.title as typeof FEATURED_REPOS[number])
-      );
+      ;
 
     return { projects };
   } catch (error) {
