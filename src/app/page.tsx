@@ -12,7 +12,7 @@ export default function Home() {
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100">
       <NavigationBar />
 
-      <div className="relative pt-20 overflow-hidden">
+      <div className="relative pt-20 pb-5 overflow-clip">
         <div className="absolute inset-x-0 -inset-y-40 max-w-6xl mx-auto">
           {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-purple-500/30 transform rotate-12 blur-3xl opacity-20 animate-pulse duration-1000"></div> */}
           <div className="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-purple-500/30 transform rotate-12 blur-3xl opacity-20 [animation:pulse_8s_cubic-bezier(0.4,0,0.6,1)_infinite]"></div>
