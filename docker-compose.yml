@@ -12,6 +12,7 @@ services:
       - /app/.next
     environment:
       - NODE_ENV=development
+      - NEXT_TELEMETRY_DISABLED=1
     command: npm run dev
 
   web-prod:
@@ -23,3 +24,4 @@ services:
       - "127.0.0.1:3001:3000"
     environment:
       - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1

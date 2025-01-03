@@ -26,6 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <link rel="icon" href="/favicon.svg" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased transition-colors`}
       >
