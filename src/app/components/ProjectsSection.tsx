@@ -89,7 +89,7 @@ export default async function ProjectsSection() {
   if (error) {
     return (
       <div className="min-h-[400px] flex items-center justify-center">
-        <div className="backdrop-blur-xl bg-white/60 dark:bg-black/40 rounded-xl p-6 text-red-500">
+        <div className="bg-white/60 dark:bg-black/40 rounded-none p-6 text-red-500">
           Error loading projects: {error}
         </div>
       </div>
@@ -107,8 +107,8 @@ export default async function ProjectsSection() {
             key={project.title}
             className="group relative h-56"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-            <div className="relative backdrop-blur-xl bg-white/60 dark:bg-black/40 rounded-2xl p-6 border border-white/20 dark:border-white/10 transition-all duration-300 group-hover:border-blue-500/50 h-full flex flex-col"
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-none blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+            <div className="relative bg-white/60 dark:bg-black/40 rounded-none p-6 border border-white/20 dark:border-white/10 transition-all duration-300 group-hover:border-blue-500/50 h-full flex flex-col"
             >
               <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
               <p className="text-zinc-600 dark:text-zinc-400 mb-4 text-sm line-clamp-2">{project.description}</p>

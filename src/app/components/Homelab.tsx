@@ -24,10 +24,15 @@ const homelabSetup = {
         hypervisor: "Proxmox VE",
         firewall: "OPNsense",
         storage: "TrueNAS",
-        mainWorkstation: {
+        primaryWorkstation: {
             os: "Arch Linux",
             type: "Virtualized in primary_node with GPU PCIE Passthrough",
+        },
+        secondaryWorkstation: {
+            os: "Macbook M4 Pro",
+            type: "Apple Silicon",
         }
+
     }
 };
 
@@ -58,9 +63,13 @@ const homelab = {
         hypervisor: "${homelabSetup.infrastructure.hypervisor}",
         firewall: "${homelabSetup.infrastructure.firewall}",
         storage: "${homelabSetup.infrastructure.storage}",
-        main_workstation: {
-            os: "${homelabSetup.infrastructure.mainWorkstation.os}",
-            type: "${homelabSetup.infrastructure.mainWorkstation.type}",
+        primary_workstation: {
+            os: "${homelabSetup.infrastructure.primaryWorkstation.os}",
+            type: "${homelabSetup.infrastructure.primaryWorkstation.type}",
+        }
+        secondary_workstation: {
+            os: "${homelabSetup.infrastructure.secondaryWorkstation.os}",
+            type: "${homelabSetup.infrastructure.secondaryWorkstation.type}",
         }
     }
 };`;
@@ -73,7 +82,7 @@ const homelab = {
             {!isRevealed ? (
                 <button
                     onClick={() => setIsRevealed(true)}
-                    className="group backdrop-blur-xl bg-white/60 dark:bg-black/40 rounded-2xl p-6
+                    className="group  bg-white/60 dark:bg-black/40 rounded-none p-6
                     border border-white/20 dark:border-white/10 transition-all duration-300
                     hover:border-blue-500/50 w-full text-zinc-700 dark:text-zinc-300
                     hover:text-blue-500 font-medium"
@@ -82,7 +91,7 @@ const homelab = {
                 </button>
             ) : (
                 <div className="space-y-4">
-                    <div className="backdrop-blur-xl bg-white/60 dark:bg-black/40 rounded-2xl p-4 font-mono text-base border border-white/20 dark:border-white/10">
+                    <div className="bg-white/60 dark:bg-black/40 rounded-none p-4 font-mono text-base border border-white/20 dark:border-white/10">
                         <pre>
                             <code ref={codeRef} className="language-javascript !bg-transparent">
                                 {codeSnippet}
@@ -91,7 +100,7 @@ const homelab = {
                     </div>
                     <button
                         onClick={() => setIsRevealed(false)}
-                        className="group backdrop-blur-xl bg-white/60 dark:bg-black/40 rounded-2xl p-4
+                        className="group bg-white/60 dark:bg-black/40 rounded-none p-4
                         border border-white/20 dark:border-white/10 transition-all duration-300
                         hover:border-blue-500/50 w-full text-zinc-700 dark:text-zinc-300
                         hover:text-blue-500 font-medium"

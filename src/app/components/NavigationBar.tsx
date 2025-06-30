@@ -42,16 +42,16 @@ export const NavigationBar = () => {
 	return (
 		// Using an invisible bottom border here because something weird happens when scrolled is true (when i scroll)
 		<nav
-			className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
-				? 'backdrop-blur-xl bg-white/60 dark:bg-black/60 border-b border-zinc-200 dark:border-zinc-800'
-				: 'bg-transparent border-zinc-200/0 dark:border-zinc-800/0'
+			className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${scrolled
+				? 'bg-white dark:bg-black border-b border-zinc-200 dark:border-zinc-800'
+				: 'border-zinc-200/0 dark:border-zinc-800/0'
 				}`}
 		>
 			<div className="max-w-6xl mx-auto px-3">
 				<div className="flex justify-between items-center h-16">
 					<a
 						href="#"
-						className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text"
+						className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-700 text-transparent bg-clip-text"
 					>
 						hamker.dev
 					</a>
@@ -75,7 +75,7 @@ export const NavigationBar = () => {
 						{/* Theme Toggle */}
 						{/* <button
 							onClick={toggleTheme}
-							className="p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+							className="p-2 rounded-none hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
 							aria-label="Toggle theme"
 						>
 							{resolvedTheme === 'dark' ? (
@@ -90,7 +90,7 @@ export const NavigationBar = () => {
 					<div className="md:hidden flex items-center gap-4">
 						{/* <button
 							onClick={toggleTheme}
-							className="p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+							className="p-2 rounded-none hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
 							aria-label="Toggle theme"
 						>
 							{resolvedTheme === 'dark' ? (
@@ -101,7 +101,7 @@ export const NavigationBar = () => {
 						</button> */}
 
 						<button
-							className="p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+							className="p-2 rounded-none hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
 							onClick={() => setIsOpen(!isOpen)}
 							aria-label="Toggle menu"
 						>
@@ -116,7 +116,7 @@ export const NavigationBar = () => {
 
 				{/* Mobile Menu */}
 				{isOpen && (
-					<div className="md:hidden absolute top-16 left-0 right-0 backdrop-blur-xl bg-white/90 dark:bg-black/90 border-b border-zinc-200 dark:border-zinc-800">
+					<div className="md:hidden absolute top-16 left-0 right-0  bg-white/90 dark:bg-black/90 border-b border-zinc-200 dark:border-zinc-800">
 						<div className="flex flex-col space-y-4 p-6">
 							{navItems.map((item) => (
 								<a

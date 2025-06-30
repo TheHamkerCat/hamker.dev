@@ -40,7 +40,7 @@ let techStack = {
             <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
                 Tech Stack
             </h2>
-            <div className="backdrop-blur-xl bg-white/60 dark:bg-black/40 rounded-2xl p-4 font-mono text-base border border-white/20 dark:border-white/10">
+            <div className="bg-white/60 dark:bg-black/40 rounded-none p-4 font-mono text-base border border-white/20 dark:border-white/10">
                 <pre>
                     <code ref={codeRef} className="language-javascript !bg-transparent">
                         {codeSnippet}
