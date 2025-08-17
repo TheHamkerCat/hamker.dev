@@ -37,7 +37,7 @@ let techStack = {
   `;
     return (
         <div id="skills" className="mt-16">
-            <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
+            <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-yellow-500 to-orange-500 text-transparent bg-clip-text">
                 Tech Stack
             </h2>
             <div className="bg-white/60 dark:bg-black/40 rounded-none p-4 font-mono text-base border border-white/20 dark:border-white/10">

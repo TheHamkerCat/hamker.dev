@@ -76,21 +76,30 @@ const homelab = {
 
     return (
         <div id="homelab" className="mt-16">
-            <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
+            <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-yellow-500 to-orange-500 text-transparent bg-clip-text">
                 Homelab Setup
             </h2>
             {!isRevealed ? (
                 <button
                     onClick={() => setIsRevealed(true)}
-                    className="group  bg-white/60 dark:bg-black/40 rounded-none p-6
+                    className="group  bg-white/60 dark:bg-black/40 rounded-none p-4
                     border border-white/20 dark:border-white/10 transition-all duration-300
-                    hover:border-blue-500/50 w-full text-zinc-700 dark:text-zinc-300
-                    hover:text-blue-500 font-medium"
+                    hover:border-yellow-500/50 w-full text-zinc-700 dark:text-zinc-300
+                    hover:text-yellow-500 font-medium"
                 >
                     Show
                 </button>
             ) : (
                 <div className="space-y-4">
+                    <button
+                        onClick={() => setIsRevealed(false)}
+                        className="group bg-white/60 dark:bg-black/40 rounded-none p-4
+                        border border-white/20 dark:border-white/10 transition-all duration-300
+                        hover:border-yellow-500/50 w-full text-zinc-700 dark:text-zinc-300
+                        hover:text-yellow-500 font-medium"
+                    >
+                        Hide
+                    </button>
                     <div className="bg-white/60 dark:bg-black/40 rounded-none p-4 font-mono text-base border border-white/20 dark:border-white/10">
                         <pre>
                             <code ref={codeRef} className="language-javascript !bg-transparent">
@@ -98,15 +107,6 @@ const homelab = {
                             </code>
                         </pre>
                     </div>
-                    <button
-                        onClick={() => setIsRevealed(false)}
-                        className="group bg-white/60 dark:bg-black/40 rounded-none p-4
-                        border border-white/20 dark:border-white/10 transition-all duration-300
-                        hover:border-blue-500/50 w-full text-zinc-700 dark:text-zinc-300
-                        hover:text-blue-500 font-medium"
-                    >
-                        Hide
-                    </button>
                 </div>
             )}
         </div>
