@@ -76,7 +76,7 @@ const homelab = {
 
     return (
         <div id="homelab" className="mt-16">
-            <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-yellow-500 to-orange-500 text-transparent bg-clip-text">
+            <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-emerald-500 to-green-500 text-transparent bg-clip-text">
                 Homelab Setup
             </h2>
             {!isRevealed ? (
@@ -84,8 +84,8 @@ const homelab = {
                     onClick={() => setIsRevealed(true)}
                     className="group  bg-white/60 dark:bg-black/40 rounded-none p-4
                     border border-white/20 dark:border-white/10 transition-all duration-300
-                    hover:border-yellow-500/50 w-full text-zinc-700 dark:text-zinc-300
-                    hover:text-yellow-500 font-medium"
+                    hover:border-emerald-500/50 w-full text-zinc-700 dark:text-zinc-300
+                    hover:text-emerald-500 font-medium"
                 >
                     Show
                 </button>
@@ -95,8 +95,8 @@ const homelab = {
                         onClick={() => setIsRevealed(false)}
                         className="group bg-white/60 dark:bg-black/40 rounded-none p-4
                         border border-white/20 dark:border-white/10 transition-all duration-300
-                        hover:border-yellow-500/50 w-full text-zinc-700 dark:text-zinc-300
-                        hover:text-yellow-500 font-medium"
+                        hover:border-emerald-500/50 w-full text-zinc-700 dark:text-zinc-300
+                        hover:text-emerald-500 font-medium"
                     >
                         Hide
                     </button>

@@ -51,7 +51,7 @@ export const NavigationBar = () => {
 				<div className="flex justify-between items-center h-16">
 					<a
 						href="#"
-						className="text-2xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-700 text-transparent bg-clip-text"
+						className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-emerald-700 text-transparent bg-clip-text"
 					>
 						hamker.dev
 					</a>
@@ -67,7 +67,7 @@ export const NavigationBar = () => {
 									className="relative text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors group py-2"
 								>
 									{item.label}
-									<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-500 to-orange-500 group-hover:w-full transition-all duration-300"></span>
+									<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-emerald-500 to-green-500 group-hover:w-full transition-all duration-300"></span>
 								</a>
 							))}
 						</div>
@@ -94,7 +94,7 @@ export const NavigationBar = () => {
 							aria-label="Toggle theme"
 						>
 							{resolvedTheme === 'dark' ? (
-								<Sun className="w-5 h-5 text-yellow-500" />
+								<Sun className="w-5 h-5 text-emerald-500" />
 							) : (
 								<Moon className="w-5 h-5 text-zinc-600" />
 							)}
