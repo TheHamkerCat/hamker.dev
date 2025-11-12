@@ -38,7 +38,7 @@ export default function Home() {
                   </h1>
                   <p className="text-2xl text-zinc-700 dark:text-zinc-300 mb-3">Full Stack Developer</p>
                   <p className="text-zinc-600 dark:text-zinc-400 mb-4 max-w-2xl">
-                    TheHamkerCat aka Akshay - 21-year-old friendly neighbourhood programmer from India.
+                    TheHamkerCat aka Akshay - 22-year-old friendly neighbourhood programmer from India.
                   </p>
                   <div className="flex flex-wrap gap-4 text-zinc-600 dark:text-zinc-400">
                     <div className="flex items-center gap-2  bg-white/60 dark:bg-black/40 rounded-none py-2 px-4 border border-white/20 dark:border-white/10 transition-all duration-300 hover:border-emerald-500/50">

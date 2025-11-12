@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "TheHamkerCat | Akshay Rajput - Full Stack Developer",
-  description: "TheHamkerCat (Akshay Rajput) - 21-year-old Full Stack Developer from New Delhi, India. Building cool stuff since 2020. Expert in React, Next.js, Python, and modern web technologies.",
+  description: "TheHamkerCat (Akshay Rajput) - 22-year-old Full Stack Developer from New Delhi, India. Building cool stuff since 2020. Expert in React, Next.js, Python, and modern web technologies.",
   keywords: ["TheHamkerCat", "Akshay Rajput", "Full Stack Developer", "React Developer", "Next.js Developer", "Python Developer", "Web Developer", "Software Engineer", "India", "New Delhi"],
   authors: [{ name: "TheHamkerCat", url: "https://hamker.dev" }],
   creator: "TheHamkerCat",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://hamker.dev",
     title: "TheHamkerCat | Akshay Rajput - Full Stack Developer",
-    description: "TheHamkerCat (Akshay Rajput) - 21-year-old Full Stack Developer from New Delhi, India. Building cool stuff since 2020.",
+    description: "TheHamkerCat (Akshay Rajput) - 22-year-old Full Stack Developer from New Delhi, India. Building cool stuff since 2020.",
     siteName: "TheHamkerCat",
     images: [
       {
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "TheHamkerCat | Akshay Rajput - Full Stack Developer",
-    description: "TheHamkerCat (Akshay Rajput) - 21-year-old Full Stack Developer from New Delhi, India. Building cool stuff since 2020.",
+    description: "TheHamkerCat (Akshay Rajput) - 22-year-old Full Stack Developer from New Delhi, India. Building cool stuff since 2020.",
     creator: "@TheHamkerCat",
     images: ["https://hamker.dev/pfp.png"],
   },
@@ -110,7 +110,7 @@ export default function RootLayout({
                 "Software Engineering",
                 "ManyOtherThings"
               ],
-              "description": "TheHamkerCat (Akshay Rajput) is a 21-year-old Full Stack Developer from New Delhi, India, building cool stuff since 2020."
+              "description": "TheHamkerCat (Akshay Rajput) is a 22-year-old Full Stack Developer from New Delhi, India, building cool stuff since 2020."
             })
           }}
         />
