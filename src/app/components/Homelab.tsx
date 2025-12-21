@@ -11,7 +11,7 @@ const homelabSetup = {
         primary: {
             cpu: "Ryzen 7 7800X3D",
             gpu: ["RTX 3060", "RX 6600"],
-            ram: "64GB DDR5",
+            ram: "128-GB DDR5",
             role: "primary_node"
         },
         secondary: {
