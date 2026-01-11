@@ -6,12 +6,14 @@ import LinkedIn from './components/icons/LinkedIn';
 import Skills from './components/Skills';
 import Homelab from './components/Homelab';
 import Pgp from './components/PGP';
+import { Cat } from './components/Cat';
 
 
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100">
+      <Cat />
       <NavigationBar />
 
       <div className="relative pt-20 pb-5 overflow-clip">
